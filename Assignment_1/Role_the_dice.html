@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="Role_the_dice.css">
+	<link rel="shortcut icon" href="./assets/dice.gif" type="image/x-icon">
+	<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Merienda+One" />
+	<script src="Role_the_dice.js"></script>
+	<title>Role The Dice Game</title>
+</head>
+<body>
+<div class="wrapper">
+	<div class="Game_name">
+		<h1 >🎲Dice Mania</h1>
+	</div>
+	<div class="winner_info"></div>
+	<div class="player_details">
+
+		<!--player 1 section -->
+		<section class="player1">
+			<h1 contenteditable="true" aria-label="Player 1 Name" id="player1">Player 1</h1>
+			<h2 >Saved Score - <span id="player1_savedScore">0</span></h2>
+			<h2 >Current Score - <span id="player1_currScore">0</span></h2>
+		</section>
+
+		<!--player 2 section -->
+		<section class="player2">
+			<h1 contenteditable="true" aria-label="Player 2 Name" id="player2">Player 2</h1>
+			<h2 >Saved Score - <span id="player2_savedScore">0</span></h2>
+			<h2 >Current Score - <span id="player2_currScore">0</span></h2>
+		</section>
+	</div>
+
+	<!--dice-->
+
+		<img src="./assets/dice_1.png" alt="Dice" class="dice">
+
+
+	<!--Buttons Control Start-->
+	<div class="btn">
+
+		<button type="button" id="role_button">Role Dice</button>
+		<button type="button" id="save_button">Save Score</button>
+	</div>
+	<button type="button" id="reset_button">Reset</button>
+
+
+</div>
+</body>
+</html>

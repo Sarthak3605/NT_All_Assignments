@@ -1,0 +1,224 @@
+*{
+	padding:0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body{
+	overflow-y:hidden;
+	height: 100vh;
+	margin: 0;
+	background: linear-gradient(to bottom, rgba(255, 36, 36, 0.472),rgba(255, 54, 195, 0.323),rgba(69, 230, 255, 0.307), rgb(255, 255, 255));
+}
+.Game_name >h1{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+	font-size: 3rem;
+	font-family: "Merienda One";
+	letter-spacing: 0.5rem;
+}
+.winner_info{
+	width: 100%;
+	text-align: center;
+	margin-top: 1.2rem;
+	font-size: 2rem;
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+.player_details{
+	display: flex;
+	justify-content: space-around;
+	margin: 20px;
+
+}
+.player1, .player2{
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 8px;
+	padding: 2rem 2rem;
+	border-radius: 10px;
+}
+#player1,#player2{
+	border: none;
+}
+
+.dice{
+	width: 150px;
+	height: 150px;
+	font-size: 10rem;
+	position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 0.1s ease-in-out;
+
+}
+
+.btn{
+	position: absolute;
+	bottom: 15%;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 55%;
+	display: flex;
+	justify-content: space-between;
+	transition: all 0.1s ease-in-out;
+
+
+}
+#role_button,#save_button{
+	width: 20%;
+	border-radius: 10px;
+	padding: .5rem .5rem;
+	border: none;
+	box-shadow:  2px 2px 2px rgba(0, 0, 0, 0.3);
+	transition: all 0.1s ease-in-out;
+	font-size:large;
+	cursor: pointer;
+}
+#reset_button{
+	position: absolute;
+	bottom: 8%;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 8%;
+	border-radius: 10px;
+	padding: .5rem .5rem;
+	border: none;
+	box-shadow:  2px 2px 2px rgba(0, 0, 0, 0.3);
+	transition: all 0.1s ease-in-out;
+	font-size:large;
+	cursor: pointer;
+}
+
+#reset_button:hover,#role_button:hover,#save_button:hover{
+	background-color: white;
+	box-shadow:  0 0 2px rgba(35, 35, 35, 0.318);
+
+}
+.active_player{
+	background-color: rgba(46, 43, 43, 0.189);
+	transition: all 0.3s ease-in-out;
+}
+.winner{
+
+	background-color: rgba(0, 255, 60, 0.543);
+	transition: all 0.3s ease-in-out;
+}
+.hidden{
+	display: none;
+}
+
+
+/* Large Screen Laptops, big screens... */
+@media screen and (min-width: 1024px) {
+	.Game_name > h1 {
+		font-size: 4rem;
+	}
+
+	.player_details {
+		margin: 40px;
+	}
+
+	.player1, .player2 {
+		width: 30%;
+	}
+
+	.dice {
+		width: 150px;
+		height: 150px;
+		font-size: 12rem;
+	}
+
+	.btn {
+		width: 50%;
+	}
+
+	#role_button, #save_button {
+		width: 25%;
+	}
+
+	#reset_button {
+		width: 10%;
+	}
+}
+
+/* Medium to Small Screens mobiles,tablets... */
+@media screen and (max-width: 1024px) {
+	.Game_name > h1 {
+		font-size: 2.5rem;
+	}
+
+	.player_details {
+		flex-direction: row;
+		margin: 20px;
+	}
+
+	.player1, .player2 {
+		width: 40%;
+		margin-bottom: 20px;
+	}
+
+	.dice {
+		width: 150px;
+		height: 150px;
+		font-size: 8rem;
+	}
+
+	.btn {
+		width: 70%;
+	}
+
+	#role_button, #save_button {
+		width: 30%;
+	}
+
+	#reset_button {
+		width: 12%;
+	}
+}
+
+/* Mobile Screens more small... */
+@media screen and (max-width: 600px) {
+	.Game_name > h1 {
+		font-size: 2rem;
+	}
+
+	.player_details {
+		flex-direction: column;
+		margin: 10px;
+	}
+
+	.player1, .player2 {
+		width: 100%;
+		padding: 1.5rem;
+	}
+
+	.dice {
+		margin-top: 1.5rem;
+		width: 110px;
+		height: 110px;
+		font-size: 6rem;
+	}
+
+	.btn {
+		width: 80%;
+		flex-direction: row;
+		gap: 15px;
+		justify-content: center;
+	}
+
+	#role_button, #save_button {
+		width: 40%;
+		margin-bottom: 10px;
+	}
+
+	#reset_button {
+		width: 20%;
+	}
+}
