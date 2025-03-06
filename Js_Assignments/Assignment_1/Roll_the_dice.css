@@ -71,7 +71,7 @@ body{
 
 
 }
-#role_button,#save_button{
+#roll_button,#save_button{
 	width: 20%;
 	border-radius: 10px;
 	padding: .5rem .5rem;
@@ -96,7 +96,7 @@ body{
 	cursor: pointer;
 }
 
-#reset_button:hover,#role_button:hover,#save_button:hover{
+#reset_button:hover,#roll_button:hover,#save_button:hover{
 	background-color: white;
 	box-shadow:  0 0 2px rgba(35, 35, 35, 0.318);
 
@@ -139,7 +139,7 @@ body{
 		width: 50%;
 	}
 
-	#role_button, #save_button {
+	#roll_button, #save_button {
 		width: 25%;
 	}
 
@@ -174,7 +174,7 @@ body{
 		width: 70%;
 	}
 
-	#role_button, #save_button {
+	#roll_button, #save_button {
 		width: 30%;
 	}
 
@@ -213,7 +213,7 @@ body{
 		justify-content: center;
 	}
 
-	#role_button, #save_button {
+	#roll_button, #save_button {
 		width: 40%;
 		margin-bottom: 10px;
 	}

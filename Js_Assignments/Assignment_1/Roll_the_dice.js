@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const img =  document.querySelector('.dice');
 
 	//buttons
-	const role = document.getElementById('role_button');
+	const roll = document.getElementById('roll_button');
     const save = document.getElementById('save_button');
     const reset = document.getElementById('reset_button');
 
@@ -35,13 +35,13 @@ document.addEventListener('DOMContentLoaded', function() {
 		togglePlayer();
 	}
 
-	//code for handling the role of dice
+	//code for handling the roll of dice
 
-  function roleHandle(){
+  function rollHandle(){
 	img.style.opacity = 0;
 	img.src = "./assets/dice.gif";
 /*we will use setTimeout function in order to get smooth transition like when we
-click on role then it will dissapear and come again which show more effective transition*/
+click on roll then it will dissapear and come again which show more effective transition*/
 
     const numbers = Math.floor(Math.random()*6) +1; //for random numbers among 1,2,3,4,5,6
 	setTimeout(function(){
@@ -82,7 +82,7 @@ click on role then it will dissapear and come again which show more effective tr
 
 		document.querySelector('.winner_info').textContent = `💥${playername} Wins!💥`
 		document.querySelector(`.player${activePlayer}`).classList.toggle('winner');
-		document.querySelector('.winner_info').textContent.classList.remove('hidden')
+		document.querySelector('.winner_info').classList.remove('hidden')
 	}
 
 	save.disabled = true; //save button disabled so that the user can not save score multiple times so it's not allowed
@@ -107,7 +107,7 @@ function resetHandle(){
 	document.querySelector('.player1').classList.remove('winner');
 	document.querySelector('.player2').classList.remove('winner');
 
-	document.querySelector('.winner_info').classList.add('hidden');
+	document.querySelector('.winner_info').textContent = '';
 
 }
 
@@ -119,7 +119,7 @@ const togglePlayer = () =>{
 
 //All the buttons code is here which handle diffrent functionalities
 
-role.addEventListener('click',roleHandle);
+roll.addEventListener('click',rollHandle);
 save.addEventListener('click',saveHandle);
 reset.addEventListener('click',resetHandle)
 })
