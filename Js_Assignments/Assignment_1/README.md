@@ -51,7 +51,8 @@ cd Dice-Mania
 Open the index.html file in your browser to start playing the game.
 
 ## Screenshot of Game UI
-![Screenshot (97)](https://github.com/user-attachments/assets/b353d003-7553-4337-9d49-de1c82555f6b)
+![Screenshot (110)](https://github.com/user-attachments/assets/663f6b2f-9e91-4fe2-b47e-238c6190b07b)
+
 
 ## Contact
 For any feedback, you can reach me at:
