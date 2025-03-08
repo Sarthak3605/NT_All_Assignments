@@ -52,4 +52,4 @@ And apply it before displaying the text:
 
 
 ## About This Assignment  
-This project was created as part of my training. It demonstrates my ability to fetch data from an API, handle UI interactions, and build a responsive web application.  
+This project was created as part of my NucleusTeq training. It demonstrates my ability to fetch data from an API, handle UI interactions, and build a responsive web application.  
