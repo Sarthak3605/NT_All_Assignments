@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="/quiz.css">
+	<link rel="shortcut icon" href="/assets/favicon.png" type="image/x-icon">
+	<script src="/quiz.js" defer></script>
+	<title>Quiz Trivia</title>
+</head>
+<body>
+	<main  class="wrapper">
+		<!--Start screen-->
+
+		<!--categories options-->
+		<section id="startScreen" >
+			<select name="category" id="category">
+                <option value="18">Computers</option>
+                <option value="10">Celebrities</option>
+                <option value="11">Entertainment : Film</option>
+				<option value="9">General Knowledge</option>
+                <option value="23">History</option>
+                <option value="12">Music</option>
+                <option value="20">Mythology</option>
+                <option value="24">Politics</option>
+			</select>
+
+			<!--difficulty level options-->
+			<select name="level" id="level">
+				<option value="easy" selected>Easy</option>
+				<option value="medium">Medium</option>
+				<option value="hard">Hard</option>
+			</select>
+
+			<button class="startbtn">Start Quiz</button>
+
+		</section>
+
+		<!--Game screen-->
+		<section id="gameScreen" class="hidden">
+			<span id="questionNum"></span>
+			<div class="box">
+				<div id="question"></div>
+				<div id="answers"></div>
+			</div>
+
+		<img src="/assets/icon.gif" alt="Icon" class="spin"><span id="timer"></span>
+
+		</section>
+
+		<!--End screen & Scrore-->
+		<section id="endScreen" class="hidden">
+			<h1>Score : <span id="score"></span></h1>
+			<button type="button" class="playAgainBtn" onclick="location.reload()">Play Again</button>
+		</section>
+	</main>
+
+</body>
+</html>
