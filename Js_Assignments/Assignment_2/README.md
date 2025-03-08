@@ -25,25 +25,25 @@ A fun and interactive quiz game that challenges your knowledge with real-time qu
 Open index.html in your browser, and you're ready to play!
 
 ## How to Play
--Select a quiz category and difficulty level.
--Click Start Quiz to begin.
--Answer the multiple-choice questions before the timer runs out.
--Your final score will be displayed at the end.
--Click Play Again to restart the quiz.
+- Select a quiz category and difficulty level.
+- Click Start Quiz to begin.
+- Answer the multiple-choice questions before the timer runs out.
+- Your final score will be displayed at the end.
+- Click Play Again to restart the quiz.
 
 ## Fixing Special Characters in Questions
 we can use below for correcting the API generated questions and answers as sometimes it gives special characters like &quot,#28sa etc...
 
-function decodeHTMLEntities(text) {
-    let parser = new DOMParser();
-    return parser.parseFromString(text, "text/html").body.textContent;
-}
+1. function decodeHTMLEntities(text) {
+2.     let parser = new DOMParser();
+3.     return parser.parseFromString(text, "text/html").body.textContent;
+4. }
 
 And apply it before displaying the text:
-questionElement.textContent = decodeHTMLEntities(question.question);
-options.forEach(option => {
-    btn.textContent = decodeHTMLEntities(option);
-});
+1. questionElement.textContent = decodeHTMLEntities(question.question);
+2. options.forEach(option => {
+3.     btn.textContent = decodeHTMLEntities(option);
+4. });
 
 
 ## Screenshots
