@@ -1,4 +1,4 @@
-## 🔠Quiz Trivia
+## 🔠Quiz Trivia https://quiz-travia.netlify.app/
 
 A fun and interactive quiz game that challenges your knowledge with real-time questions from the Open Trivia Database API. Pick a category, choose a difficulty level.
 
