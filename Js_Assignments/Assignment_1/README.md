@@ -1,4 +1,4 @@
-# 🎲 Dice Mania Game
+# 🎲 Dice Mania Game https://dice-mania.netlify.app/
 
 Welcome to the Dice Mania Game! This is a fun and interactive dice-rolling game where two players can compete to reach 100 points. Players take turns rolling the dice and accumulating points, with the first player to reach 100 points declared the winner. The game is designed to be simple, interactive, and responsive for both mobile and desktop devices.
 
