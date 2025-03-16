@@ -23,6 +23,10 @@ class Dog extends Animal{
 	public void Sound(int time){
       System.out.println("Dog barks " +time+" times");
 	}
+	 // Call parent class overloaded method
+    public void Sound(String type) {
+        super.Sound(type); // Ensures parent method is called
+    }
 }
 
 
