@@ -20,7 +20,7 @@ A fun and interactive quiz game that challenges your knowledge with real-time qu
 ## Getting Started
 
 1. Clone this repository:
-   git clone https://github.com/yourusername/quiz-trivia.git
+   git clone https://github.com/Sarthak3605/NT_All_Assignments/Js_Assignments/Assignment_2.git
 2. Navigate to the project folder:
 Open index.html in your browser, and you're ready to play!
 
