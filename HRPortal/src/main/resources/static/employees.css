@@ -1,0 +1,172 @@
+*{
+  padding:0;
+  margin:0;
+  box-sizing:border-box;
+  overflow : hidden;
+  color:#333333;
+}
+
+.wrapper{
+  width:100vw;
+  height:100vh;
+  background-color:#F5F5F5;
+}
+h2{
+  font-family:Trebuchet MS;
+  color:green;
+  text-align:center;
+ padding:.5rem;
+}
+.table{
+ border-collapse: collapse;
+  margin:auto;
+  margin-top:10px;
+  width:50%;
+}
+th,td{
+  border:1px black dotted;
+  padding:.4rem .4rem;
+}
+
+h3{
+    margin:10px;
+  font-family: Georgia;
+  color:#404040;
+}
+
+form{
+  display:flex;
+  flex-direction:column;
+ width:30%;
+  gap:10px;
+}
+.form-group{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+label{
+  margin-left:1rem;
+  color:#808080;
+  flex:1;
+}
+input{
+outline: none;
+  flex:2;
+  margin-left: 1rem;
+  padding: .2rem .3rem;
+}
+
+.button-container {
+  display: flex;
+  justify-content: start;
+  gap: 10px;
+  margin-left: 1rem;
+  margin-top: 10px;
+}
+.addbtn,.logoutbtn{
+  position:relative;
+  width:30%;
+  padding: .3rem .3rem;
+  border-radius:1rem;
+  text-align:center;
+ margin:1rem;
+  border:none;
+  background-color:white;
+  transition: all .5s;
+  cursor:pointer;
+  font-weight:700;
+}
+.addbtn:hover,.logoutbtn:hover{
+  background:#001F3F;
+  color:white;
+}
+.edit-btn,.delete-btn{
+width: 48%;
+padding: .3rem .3rem;
+border-radius:1rem;
+  text-align:center;
+
+  border:none;
+    background-color:white;
+    transition: all .5s;
+    cursor:pointer;
+    font-weight:700;
+}
+.edit-btn:hover,.delete-btn:hover{
+  background:#001F3F;
+  color:white;
+}
+
+ //media queries for responsiveness
+
+ @media screen and (max-width: 1024px) {
+   .table {
+     width: 70%;
+   }
+
+   form {
+     width: 50%;
+   }
+ }
+
+ @media screen and (max-width: 768px) {
+   .table {
+     width: 90%;
+   }
+
+   form {
+     width: 70%;
+   }
+
+   .form-group {
+     flex-direction: column;
+     align-items: flex-start;
+   }
+
+   label {
+     margin-bottom: 5px;
+   }
+
+   input {
+     width: 100%;
+     margin-left: 0;
+   }
+
+   .button-container {
+     justify-content: center;
+     margin-left: 0;
+   }
+
+   .addbtn, .logoutbtn {
+     width: 40%;
+   }
+
+   .edit-btn, .delete-btn {
+     width: 100%;
+     margin-bottom: 5px;
+   }
+ }
+
+ @media screen and (max-width: 480px) {
+   h2, h3 {
+     font-size: 1.2rem;
+   }
+
+   .table {
+     width: 100%;
+     font-size: 0.8rem;
+   }
+
+   th, td {
+     padding: 0.3rem;
+   }
+
+   form {
+     width: 90%;
+   }
+
+   .addbtn, .logoutbtn {
+     width: 50%;
+   }
+ }
