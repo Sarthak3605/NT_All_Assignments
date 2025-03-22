@@ -1,6 +1,6 @@
 
 #**All Assignments Assigned to me**
 
-This is a README.md file in my repository.
-=======
-
+##Admin Credentials
+#Login - admin@hr.com
+#Password - admin123
