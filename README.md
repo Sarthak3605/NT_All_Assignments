@@ -1,6 +1,6 @@
 
-#**All Assignments Assigned to me**
+# **All Assignments Assigned to me**
 
-##Admin Credentials
-#Login - admin@hr.com
-#Password - admin123
+## Admin Credentials
+# Login - admin@hr.com <br>
+# Password - admin123
